@@ -9,7 +9,7 @@ const SearchBar = ({ onSearch }) => {
 
   return (
     <div className='find-block'>
-      <h2 className='find-title'>Find Your Meal</h2>
+      <h2 className='find-title'>Find your Meal</h2>
       <div className='find-search-row'>
         <input
           type="text"
