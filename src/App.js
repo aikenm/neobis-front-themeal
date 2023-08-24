@@ -1,11 +1,19 @@
-import './styles/style.css';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import MainPage from './pages/MainPage';
+import IngredientsPage from './pages/IngredientsPage';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      
-    </div>
+    <BrowserRouter>
+      <div>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/ingredients/:mealId" element={<IngredientsPage />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
