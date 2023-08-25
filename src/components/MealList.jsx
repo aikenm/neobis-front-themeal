@@ -4,6 +4,7 @@ import '../styles/style.css';
 
 const MealList = ({ meals, onMealClick }) => {
   if (meals === null || meals === undefined) {
+    
     return null;
   }
 
