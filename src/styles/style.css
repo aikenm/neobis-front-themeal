@@ -44,6 +44,10 @@ html, body {
     color: #d49726;
 }
 
+.random-meal-link {
+    text-decoration: none;
+}
+
 .mod-meal-category {
     display: inline;
     font-size: 18px;

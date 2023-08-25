@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/style.css';
 
 const MealOfDay = () => {
@@ -22,7 +23,9 @@ const MealOfDay = () => {
     <section className='mod-section'>
       <div className='mod-info-block'>
         <h2 className='mod-title'>Meal of the Day</h2>
-        <h3 className='mod-meal-name'>{mealOfDay.strMeal}</h3>
+        <Link to={`/ingredients/${mealOfDay.idMeal}`} className='random-meal-link'>
+            <h3 className='mod-meal-name'>{mealOfDay.strMeal}</h3>
+        </Link>
         <p className='mod-meal-category'>{mealOfDay.strCategory}</p>
         <p className='mod-meal-country'> | {mealOfDay.strArea}</p>
       </div>
