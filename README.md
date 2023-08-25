@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# neobis-front-themeal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# The Meal DB
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+**The Meal DB** is a user-friendly and interactive web application that caters to users who are looking to discover new recipes, explore diverse cuisines, and access cooking instructions in a convenient and organized manner. Whether users are searching for a specific meal or looking for culinary inspiration, "The Meal DB" offers a comprehensive platform for discovering and exploring a world of delicious possibilities.
 
-### `npm start`
+You can make a quick view here on **Netlify:** https://resplendent-griffin-f7219d.netlify.app
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**The Meal DB** is a dynamic web application that provides users with the ability to explore a wide variety of meals using the extensive database offered by the https://www.themealdb.com API. The project is built using React, utilizing the react-router-dom library for seamless navigation between different sections of the app and Axios for making API requests.
 
-### `npm test`
+- **Main Page:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  The main page of the app welcomes users with a header, a "Meal of the Day" section, a search block, and a meal list. The "Meal of the Day" section showcases a randomly selected meal's image, name, category, and country. Users can click on the meal name to view its detailed ingredients and instructions on a separate page.
 
-### `npm run build`
+- **Search Functionality:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  The search block empowers users to find specific meals by entering keywords. Each displayed meal is presented with its image, name, category, and country.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Meal List:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The meal list section showcases a range of meals based on user interactions. If a user searches for specific keywords or clicks on a category, a list of related meals is displayed. Users can click on any meal from the list to view its detailed ingredients and instructions.
 
-### `npm run eject`
+- **Ingredients Page:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+When a user clicks on a meal's name from the main page or meal list, they are directed to the ingredients page. This page provides comprehensive information about the selected meal, including a list of ingredients and detailed cooking instructions.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Navigation:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Users can seamlessly navigate between the main page and ingredients page using the header logo. This feature offers a smooth transition between exploring different meals and returning to the main page.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Installation
 
-## Learn More
+1. **Download Visual Studio Code (VSCode)**:
+   Download and install Visual Studio Code, a popular code editor, to work with the project files.
+   Download Link: [Visual Studio Code](https://code.visualstudio.com/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Install Node.js and npm**:
+   Node.js is required to run JavaScript applications on the server. npm (Node Package Manager) comes with Node.js and helps manage project dependencies.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   a. Download Node.js:
+   Download and install the latest LTS version of Node.js.
+   Download Link: [Node.js](https://nodejs.org/)
 
-### Code Splitting
+   b. Verify Installation:
+   Open a terminal or command prompt and run the following commands to verify that Node.js and npm are installed:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   node -v
+   npm -v
+   ```
 
-### Analyzing the Bundle Size
+3. **Clone the Repository**:
+   Clone the GitHub repository to your local machine using the following command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+git clone https://github.com/aikenm/neobis-front-themeal.git
+```
 
-### Making a Progressive Web App
+4. **Open a Terminal or Command Prompt**:
+   Navigate to the project directory using the `cd` command and run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+1. npm install
+```
 
-### Advanced Configuration
+```bash
+2. npm install axios
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+3. npm install react-router-dom
+```
 
-### Deployment
+5. **Start the Development Server**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+npm start
+```
 
-### `npm run build` fails to minify
+If you succeed, your browser will automatically open a running app on your **localhost**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Authors
+
+This project is authored by Aiken Manasbekov.
+
+## Contact
+
+For any questions or suggestions, feel free to contact me:
+
+Email: a.mnsbkv@gmail.com
+
+GitHub: https://github.com/aikenm
