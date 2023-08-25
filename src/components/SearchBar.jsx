@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
+import '../styles/style.css';
 
 const SearchBar = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [showValidation, setShowValidation] = useState(false); 
 
   const handleSearch = () => {
-    onSearch(searchTerm); 
+    if (searchTerm.trim() === '') {
+      setShowValidation(true); 
+    } else {
+      setShowValidation(false); 
+      onSearch(searchTerm);
+    }
   };
 
   return (
@@ -20,6 +27,7 @@ const SearchBar = ({ onSearch }) => {
         />
         <button onClick={handleSearch} className='find-search-button'>Search</button>
       </div>
+      {showValidation && <p className='validation-message'>Type something.</p>}
     </div>
   );
 };

@@ -100,6 +100,13 @@ html, body {
     border-bottom-left-radius: 4px;
     background-color: #dcdcdc;
 }
+
+.validation-message {
+    font-family: 'Raleway', sans-serif;
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
   
 .find-search-button {
     background-color: #d49726;
