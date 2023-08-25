@@ -14,7 +14,6 @@ const MainPage = ({ event }) => {
       try {
         const response = await axios.get('https://www.themealdb.com/api/json/v1/1/random.php');
         const data = response.data;
-        console.log(data);
         setMeals(data.meals);
       } catch (error) {
         console.error('Error getting meal of the day:', error);
