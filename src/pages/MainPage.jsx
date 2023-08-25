@@ -20,8 +20,11 @@ const MainPage = ({ history }) => {
       }
     }
 
-    fetchMealOfDay();
-  }, []);
+    // Fetch the random meal only once when the component mounts
+    if (meals.length === 0) {
+      fetchMealOfDay();
+    }
+  }, [meals]);
 
   const handleSearch = async (searchTerm) => {
     try {

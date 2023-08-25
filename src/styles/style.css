@@ -15,6 +15,10 @@ html, body {
 .header-logo {
     color: #fff;
     font-size: 32px;
+    transition: text-shadow 0.2s ease;
+}
+
+.header-logo:hover {
     text-shadow: 0px 0px 6px rgba(255,255,255,0.6);
 }
 
@@ -42,6 +46,11 @@ html, body {
     font-size: 4vw;
     margin: 30px;
     color: #d49726;
+    transition: color 0.2s ease;
+}
+
+.mod-meal-name:hover {
+    color: #b98527;
 }
 
 .random-meal-link {
@@ -205,11 +214,14 @@ html, body {
 }
 
 .md-meal-category {
+    font-size: 18px;
     display: inline;
 }
 
 .md-meal-country {
+    font-size: 18px;
     display: inline;
+    font-weight: 300;
 }
 
 .ingredients{
@@ -218,9 +230,13 @@ html, body {
 }
 
 .ingredient {
-    margin: 8px;
-    font-size: 15px;
+    margin: 6px;
     list-style-type: none;
+}
+
+.measure {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
 }
 
 .ingredient::before {

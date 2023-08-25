@@ -17,7 +17,7 @@ const MealDetail = ({ meal }) => {
                 .filter(([key, value]) => key.startsWith('strIngredient') && value)
                 .map(([key, value], index) => (
                     <li key={index} className='ingredient'>
-                    {value} - {meal[`strMeasure${key.slice(13)}`]}
+                    {value} <b className='measure'>{meal[`strMeasure${key.slice(13)}`]}</b>
                     </li>
                 ))}
             </ul>
