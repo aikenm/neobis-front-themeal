@@ -10,9 +10,16 @@ html, body {
     justify-content: center;
     height: 100px;
     background-color: #d49726;
+}
+
+.header-logo {
     color: #fff;
-    font-size: 16px;
+    font-size: 32px;
     text-shadow: 0px 0px 6px rgba(255,255,255,0.6);
+}
+
+.logo-link {
+    text-decoration: none;
 }
 
 .mod-section {
@@ -160,11 +167,11 @@ html, body {
 .meal-details {
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .md-info-block {
-    margin: 6% 0% 6% 1%;
+    margin: 5% 0% 5% 1%;
     width: 50%;
     background-color: green;
     text-align: center;
@@ -216,7 +223,7 @@ html, body {
 
 .intstructions-title {
     text-align: center;
-    font-size: 32px;
+    font-size: 33px;
     margin-bottom: 0;
 }
 
