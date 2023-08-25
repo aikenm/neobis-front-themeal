@@ -64,15 +64,15 @@ git clone https://github.com/aikenm/neobis-front-themeal.git
    Navigate to the project directory using the `cd` command and run:
 
 ```bash
-1. npm install
+npm install
 ```
 
 ```bash
-2. npm install axios
+npm install axios
 ```
 
 ```bash
-3. npm install react-router-dom
+npm install react-router-dom
 ```
 
 5. **Start the Development Server**:
