@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/style.css';
 
-const MealList = ({ meals, onMealClick }) => {
+const MealList = ({ meals }) => {
   if (meals === null || meals === undefined) {
     
     return null;

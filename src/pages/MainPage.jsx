@@ -1,43 +1,39 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios'; 
 import Header from '../components/Header';
 import MealOfDay from '../components/MealOfDay';
 import SearchBar from '../components/SearchBar';
 import MealList from '../components/MealList';
 
-const MainPage = ({ history }) => {
+const MainPage = ({ event }) => {
   const [meals, setMeals] = useState([]);
   const [searchResults, setSearchResults] = useState([]);
 
   useEffect(() => {
-    async function fetchMealOfDay() {
+    async function getMealOfDay() {
       try {
-        const response = await fetch('https://www.themealdb.com/api/json/v1/1/random.php');
-        const data = await response.json();
+        const response = await axios.get('https://www.themealdb.com/api/json/v1/1/random.php');
+        const data = response.data;
         console.log(data);
         setMeals(data.meals);
       } catch (error) {
-        console.error('Error fetching meal of the day:', error);
+        console.error('Error getting meal of the day:', error);
       }
     }
 
-    // Fetch the random meal only once when the component mounts
     if (meals.length === 0) {
-      fetchMealOfDay();
+        getMealOfDay();
     }
   }, [meals]);
 
   const handleSearch = async (searchTerm) => {
     try {
-      const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`);
-      const data = await response.json();
+      const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`);
+      const data = response.data;
       setSearchResults(data.meals);
     } catch (error) {
-      console.error('Error fetching search results:', error);
+      console.error('Error getting search results:', error);
     }
-  };
-
-  const handleMealClick = (mealId) => {
-    history.push(`/ingredients/${mealId}`);
   };
 
   return (
@@ -45,7 +41,7 @@ const MainPage = ({ history }) => {
       <Header />
       <MealOfDay meal={meals[0]} />
       <SearchBar onSearch={handleSearch} />
-      <MealList meals={searchResults} onMealClick={handleMealClick} />
+      <MealList meals={searchResults}/>
     </div>
   );
 };
