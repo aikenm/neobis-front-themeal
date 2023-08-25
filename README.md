@@ -22,15 +22,15 @@ You can make a quick view here on **Netlify:** https://resplendent-griffin-f7219
 
 - **Meal List:**
 
-The meal list section showcases a range of meals based on user interactions. If a user searches for specific keywords or clicks on a category, a list of related meals is displayed. Users can click on any meal from the list to view its detailed ingredients and instructions.
+  The meal list section showcases a range of meals based on user interactions. If a user searches for specific keywords or clicks on a category, a list of related meals is displayed. Users can click on any meal from the list to view its detailed ingredients and instructions.
 
 - **Ingredients Page:**
 
-When a user clicks on a meal's name from the main page or meal list, they are directed to the ingredients page. This page provides comprehensive information about the selected meal, including a list of ingredients and detailed cooking instructions.
+  When a user clicks on a meal's name from the main page or meal list, they are directed to the ingredients page. This page provides comprehensive information about the selected meal, including a list of ingredients and detailed cooking instructions.
 
 - **Navigation:**
 
-Users can seamlessly navigate between the main page and ingredients page using the header logo. This feature offers a smooth transition between exploring different meals and returning to the main page.
+  Users can seamlessly navigate between the main page and ingredients page using the header logo. This feature offers a smooth transition between exploring different meals and returning to the main page.
 
 ## Installation
 
