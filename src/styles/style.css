@@ -171,7 +171,6 @@ html, body {
 }
 
 .meal-details-section {
-    background-color: gray;
 }
 
 .meal-details {
@@ -183,7 +182,6 @@ html, body {
 .md-info-block {
     margin: 5% 0% 5% 1%;
     width: 50%;
-    background-color: green;
     text-align: center;
 }
 
@@ -227,8 +225,7 @@ html, body {
 }
 
 .instructions-block {
-    background-color: yellow;
-    padding: 0px 25px 25px 25px;
+    padding: 0px 35px 55px 35px;
 }
 
 .intstructions-title {
