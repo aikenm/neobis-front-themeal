@@ -16,7 +16,7 @@ const MealList = ({ meals }) => {
             <div className='list-info-block'>
               <h3 className='list-meal-name'>{meal.strMeal}</h3>
               <p className='list-meal-category'>{meal.strCategory}</p>
-              <p className='list-meal-country'> | {meal.strArea}</p>
+              <p className='list-meal-category'> | {meal.strArea}</p>
             </div>
           </Link>
         </div>

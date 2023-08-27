@@ -9,7 +9,8 @@ html, body {
     align-items: center;
     justify-content: center;
     height: 100px;
-    background-color: #d49726;
+    background: rgb(212,151,38);
+    background: radial-gradient(circle, rgba(212,151,38,1) 8%, rgba(158,112,24,1) 80%);
 }
 
 .header-logo {
@@ -47,7 +48,7 @@ html, body {
 }
 
 .mod-meal-name:hover {
-    color: #b98527;
+    color: #9c6e17;
 }
 
 .random-meal-link {
@@ -55,11 +56,6 @@ html, body {
 }
 
 .mod-meal-category {
-    display: inline;
-    font-size: 18px;
-}
-
-.mod-meal-country {
     display: inline;
     font-size: 18px;
 }
@@ -127,7 +123,7 @@ html, body {
 }
 
 .find-search-button:hover {
-    background-color: #b98527;
+    background-color: #9e7018;
 }
   
 .list-section {
@@ -173,14 +169,11 @@ html, body {
     display: inline;
 }
 
-.list-meal-country {
-    display: inline;
-}
-
 .loading-text {
     margin-top: 10%;
     font-size: 60px;
     text-align: center;
+    color: #b98527;
 }
 
 .meal-details {
@@ -204,12 +197,6 @@ html, body {
 .md-meal-category {
     font-size: 18px;
     display: inline;
-}
-
-.md-meal-country {
-    font-size: 18px;
-    display: inline;
-    font-weight: 300;
 }
 
 .ingredients{
@@ -242,7 +229,7 @@ html, body {
 }
 
 .instructions-block {
-    padding: 0px 30px 55px 30px;
+    padding: 0px 35px 55px 35px;
 }
 
 .intstructions-title {
@@ -256,7 +243,7 @@ html, body {
 }
 
 .btn-block {
-    padding: 0px 30px 90px 30px;
+    padding: 0px 35px 90px 35px;
 }
 
 .youtube-button {

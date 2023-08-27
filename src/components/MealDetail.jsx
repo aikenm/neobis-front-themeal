@@ -11,7 +11,7 @@ const MealDetail = ({ meal }) => {
         <div className='md-info-block'>
             <h2 className='md-meal-name'>{meal.strMeal}</h2>
             <p className='md-meal-category'>{meal.strCategory}</p>
-            <p className='md-meal-country'> | {meal.strArea}</p>
+            <p className='md-meal-category'> | {meal.strArea}</p>
             <ul className='ingredients'>
                 {Object.entries(meal)
                 .filter(([key, value]) => key.startsWith('strIngredient') && value)

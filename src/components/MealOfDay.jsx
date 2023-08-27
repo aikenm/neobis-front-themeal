@@ -28,7 +28,7 @@ const MealOfDay = () => {
             <h3 className='mod-meal-name'>{mealOfDay.strMeal}</h3>
         </Link>
         <p className='mod-meal-category'>{mealOfDay.strCategory}</p>
-        <p className='mod-meal-country'> | {mealOfDay.strArea}</p>
+        <p className='mod-meal-category'> | {mealOfDay.strArea}</p>
       </div>
       <img src={mealOfDay.strMealThumb} alt={mealOfDay.strMeal} className='mod-meal-image'/>
     </section>

@@ -10,6 +10,13 @@ const SearchBar = ({ onSearch, noMealsFound, showValidation }) => {
     } else {
       onSearch(searchTerm);
     }
+    setSearchTerm('');
+  };
+
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      handleSearch();
+    }
   };
 
   return (
@@ -21,6 +28,7 @@ const SearchBar = ({ onSearch, noMealsFound, showValidation }) => {
           placeholder="Find your meal"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
+          onKeyPress={handleKeyPress}
           className='find-search-input'
         />
         <button onClick={handleSearch} className='find-search-button'>Search</button>
