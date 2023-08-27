@@ -8,6 +8,8 @@ import MealList from '../components/MealList';
 const MainPage = ({ event }) => {
   const [meals, setMeals] = useState([]);
   const [searchResults, setSearchResults] = useState([]);
+  const [showValidation, setShowValidation] = useState(false);
+  const [noMealsFound, setNoMealsFound] = useState(false); 
 
   useEffect(() => {
     async function getMealOfDay() {
@@ -21,15 +23,28 @@ const MainPage = ({ event }) => {
     }
 
     if (meals.length === 0) {
-        getMealOfDay();
+      getMealOfDay();
     }
   }, [meals]);
 
   const handleSearch = async (searchTerm) => {
     try {
-      const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`);
-      const data = response.data;
-      setSearchResults(data.meals);
+      if (searchTerm.trim() === '') {
+        setShowValidation(true);
+        setNoMealsFound(false);
+      } else {
+        setShowValidation(false);
+        const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`);
+        const data = response.data;
+
+        if (data.meals === null) {
+          setNoMealsFound(true);
+          setSearchResults([]); 
+        } else {
+          setNoMealsFound(false);
+          setSearchResults(data.meals);
+        }
+      }
     } catch (error) {
       console.error('Error getting search results:', error);
     }
@@ -39,8 +54,8 @@ const MainPage = ({ event }) => {
     <div>
       <Header />
       <MealOfDay meal={meals[0]} />
-      <SearchBar onSearch={handleSearch} />
-      <MealList meals={searchResults}/>
+      <SearchBar onSearch={handleSearch} noMealsFound={noMealsFound} showValidation={showValidation} />
+      <MealList meals={searchResults} />
     </div>
   );
 };

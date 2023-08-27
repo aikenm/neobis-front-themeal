@@ -25,8 +25,11 @@ const MealDetail = ({ meal }) => {
         <img src={meal.strMealThumb} alt={meal.strMeal} className='md-meal-image'/>
     </div>
     <div className='instructions-block'>
-      <h3 className='intstructions-title'>Instructions</h3>
+      <h3 className='intstructions-title'>Instruction</h3>
       <p className='intstructions-para'>{meal.strInstructions}</p>
+    </div>
+    <div className='btn-block'>
+        <a href={meal.strYoutube} className='youtube-button'>Watch on YouTube</a>
     </div>
     </section>
   );
