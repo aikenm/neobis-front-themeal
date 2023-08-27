@@ -24,13 +24,15 @@ const MealOfDay = () => {
     <section className='mod-section'>
       <div className='mod-info-block'>
         <h2 className='mod-title'>Meal of the Day</h2>
-        <Link to={`/ingredients/${mealOfDay.idMeal}`} className='random-meal-link'>
+        <Link to={`/ingredients/${mealOfDay.idMeal}`} className='random-name-link'>
             <h3 className='mod-meal-name'>{mealOfDay.strMeal}</h3>
         </Link>
         <p className='mod-meal-category'>{mealOfDay.strCategory}</p>
         <p className='mod-meal-category'> | {mealOfDay.strArea}</p>
       </div>
-      <img src={mealOfDay.strMealThumb} alt={mealOfDay.strMeal} className='mod-meal-image'/>
+      <Link to={`/ingredients/${mealOfDay.idMeal}`} className='random-image-link'>
+        <img src={mealOfDay.strMealThumb} alt={mealOfDay.strMeal} className='mod-meal-image'/>
+      </Link>
     </section>
   );
 };

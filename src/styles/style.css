@@ -16,12 +16,13 @@ html, body {
 .header-logo {
     color: #fff;
     font-size: 32px;
-    transition: text-shadow 0.2s ease;
+    transition: all 0.15s ease-in-out;
     text-decoration: none;
 }
 
 .header-logo:hover {
     text-shadow: 0px 0px 6px rgba(255,255,255,0.6);
+    transform: scale(1.08);
 }
 
 .mod-section {
@@ -44,14 +45,14 @@ html, body {
     font-size: 6vmin;
     margin: 30px;
     color: #d49726;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease-in-out;
 }
 
 .mod-meal-name:hover {
     color: #9c6e17;
 }
 
-.random-meal-link {
+.random-name-link {
     text-decoration: none;
 }
 
@@ -61,13 +62,21 @@ html, body {
 }
 
 .mod-meal-image{
-    display: flex;
     width: 33vw;
-    margin: 65px 9% 65px 0px;
     border-radius: 10px;
     box-shadow: 16px 15px 40px -9px rgba(0,0,0,0.75);
     -webkit-box-shadow: 16px 15px 40px -9px rgba(0,0,0,0.75);
     -moz-box-shadow: 16px 15px 40px -9px rgba(0,0,0,0.75);
+}
+
+.random-image-link {
+    display: flex;
+    margin: 65px 9% 65px 0px;
+    transition: all 0.2s ease-in-out;
+}
+
+.random-image-link:hover {
+    transform: scale(0.97); 
 }
 
 .find-block {
