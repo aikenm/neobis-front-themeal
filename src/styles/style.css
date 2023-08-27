@@ -37,7 +37,7 @@ html, body {
 }
 
 .mod-title {
-    font-size: 33px;
+    font-size: 4vmin;
     margin: 0;
 }
 
@@ -63,7 +63,7 @@ html, body {
 
 .mod-meal-image{
     width: 33vw;
-    border-radius: 10px;
+    border-radius: 4%;
     box-shadow: 16px 15px 40px -9px rgba(0,0,0,0.75);
     -webkit-box-shadow: 16px 15px 40px -9px rgba(0,0,0,0.75);
     -moz-box-shadow: 16px 15px 40px -9px rgba(0,0,0,0.75);
@@ -90,7 +90,7 @@ html, body {
 
 .find-title {
     margin-bottom: 1.5rem;
-    font-size: 32px;
+    font-size: 4vmin;
     margin-top: 5px;
 }
   
@@ -181,7 +181,7 @@ html, body {
 
 .loading-text {
     margin-top: 10%;
-    font-size: 60px;
+    font-size: 7vmin;
     text-align: center;
     color: #b98527;
 }
